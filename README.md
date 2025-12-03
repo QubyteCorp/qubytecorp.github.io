@@ -1,1 +1,1 @@
-# qubytecorp.github.io
+# qubyte.eu
