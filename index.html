@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qubyte - (quantum)technology consulting company">
+    <title>Qubyte</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #25282a 0%, #72425d 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .logo-container {
+            margin-bottom: 3rem;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            filter: drop-shadow(0 10px 30px rgba(191, 92, 145, 0.3));
+        }
+
+        .content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            background: linear-gradient(135deg, #ffffff 0%, #bf5c91 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+        
+        @supports not (background-clip: text) {
+            h1 {
+                color: #ffffff;
+            }
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #72425d 0%, #bf5c91 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(191, 92, 145, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(191, 92, 145, 0.5);
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            background: rgba(37, 40, 42, 0.5);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(191, 92, 145, 0.2);
+        }
+
+        .footer-content {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer-content strong {
+            color: #bf5c91;
+            font-weight: 600;
+        }
+
+        .footer-content a {
+            color: #bf5c91;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-content a:hover {
+            color: #ffffff;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+
+            .logo {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="images/qubyte.png" alt="Qubyte Logo" class="logo" onerror="this.style.display='none'">
+        </div>
+        
+        <div class="content">
+            <h1>Qubyte</h1>
+            <p class="tagline">(quantum)technology consulting company</p>
+            <p class="description">
+                We are a Budapest-based technology consultant company, 
+                specializing in emerging computing solutions and strategic consulting.
+            </p>
+            <a href="https://www.youtube.com/watch?v=QTva-X3zIRk&t=6s" class="cta-button">Check us out</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <strong>EightQubits Kft.</strong><br>
+            <a href="mailto:info@qubyte.eu">info@qubyte.eu</a>
+        </div>
+    </footer>
+</body>
+</html>
